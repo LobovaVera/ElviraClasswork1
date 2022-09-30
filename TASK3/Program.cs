@@ -26,7 +26,7 @@ while ( N <=  number)
 //2
 Console.WriteLine("Enter number");
 
-int N = int.Parse(Console.ReadLine());
+int N = int.Parse(Console.ReadLine()!);
 
 if (N > 0)
 {
@@ -39,10 +39,12 @@ while ( N <=  number)
 }}
 if (N < 0)
 {
-    int number = -N;
+    
+    int number = N;
+    N = -N;
 
-while ( N >=  number)
+while ( N >=  number )
 {
     Console.WriteLine(N);
-    N++;
+    N--;
 }}

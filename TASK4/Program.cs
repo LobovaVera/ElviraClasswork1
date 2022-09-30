@@ -1,6 +1,6 @@
 ﻿// 
  
- int number = int.Parse(Console.ReadLine())!;
+ int number = int.Parse(Console.ReadLine()!);
 
  if (number<0)
  {
