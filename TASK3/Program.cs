@@ -39,7 +39,7 @@ while ( N <=  number)
 }}
 if (N < 0)
 {
-    int number = N;
+    int number = -N;
 
 while ( N >=  number)
 {
