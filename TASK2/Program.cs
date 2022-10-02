@@ -3,7 +3,7 @@
 5 -> Пятница*/
 
 Console.WriteLine(" Введите номер дня недели");
-int numberWeek = int.Parse(Console.ReadLine());
+int numberWeek = int.Parse(Console.ReadLine()!);
 
 //1
 /*if (numberWeek<1 || numberWeek>7)
@@ -43,7 +43,7 @@ if (numberWeek == 7)
 }*/
 
 //2 
-switch(numberWeek)
+/*switch(numberWeek)
 {
     case(1): 
     Console.WriteLine(" Monday");
@@ -77,25 +77,14 @@ switch(numberWeek)
     Console.WriteLine("error");
     break;
 
-}
+}*/
 
 
-//String.Array ["monday", ]
+//3
 
-//1
-/*string name = Convert.ToString("Day"+numberWeek);
-Console.WriteLine(name);
+const int SIZE = 7;
+string[] daysOfWeekArray = new string [SIZE] {"Monday", "Tueasday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
 
-  string Day1 = "Monday" ;
- string Day2 = "Tuesday";
- string Day3 = "Wednesday";
- string Day4 = "Thursday";
-  string Day5 = "Friday" ;
- string Day6 = "Saturday";
-  string Day7 = "Sunday" ;
- 
- string day = name;
-Console.WriteLine(day);*/
+string yourWeekday = daysOfWeekArray[numberWeek-1]; 
+Console.WriteLine (yourWeekday );
 
-
-//2

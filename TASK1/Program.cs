@@ -7,10 +7,10 @@ a = -3 b = 9 -> нет*/
 
 // Math.Pow(number,2) - степень
 Console.WriteLine("Введите первое число ");
-int numberOne = int.Parse(Console.ReadLine());
+int numberOne = int.Parse(Console.ReadLine()!);
 
 Console.WriteLine("Ввeдеите второе число");
-int numberTwo = int.Parse(Console.ReadLine());
+int numberTwo = int.Parse(Console.ReadLine()!);
 
 if ( numberOne == numberTwo*numberTwo)
 {
